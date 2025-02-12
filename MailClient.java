@@ -28,7 +28,33 @@ public class MailClient
     {
         return server.getNextMailItem(user);
     }
+    
+    public String sendMailItem(String a, String b, String c) {
 
+        return a;
+    }
+    
+    public MailItem getNumberOfMessageInServer() {
+        
+        return null;
+    }
+    
+    public MailItem getLastReceivedMail() {
+        
+        return null;
+    }
+    
+    public MailItem receiveAndAutorespond() {
+        
+        return null;
+    }
+    
+    public MailItem getStatus() {
+        
+        return null;
+    }
+    
+    
     /**
      * Print the next mail item (if any) for this user to the text 
      * terminal.

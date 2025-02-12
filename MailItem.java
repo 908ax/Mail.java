@@ -27,7 +27,13 @@ public class MailItem
         this.to = to;
         this.message = message;
     }
-
+    
+    public String getSubject() {
+        return from;
+    }
+    
+    
+    
     /**
      * @return The sender of this message.
      */
