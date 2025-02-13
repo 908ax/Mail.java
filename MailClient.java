@@ -35,9 +35,10 @@ public class MailClient
         return null;
     }
     
-    public MailItem getLastReceivedMail() {
+    public int getLastReceivedMail() {
+        int a = server.howManyMailItems(user);
+        return a;
         
-        return null;
     }
     
     public MailItem receiveAndAutorespond() {
