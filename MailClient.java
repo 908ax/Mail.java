@@ -12,7 +12,6 @@ public class MailClient
     // The user running this client.
     private String user;
     
-    private MailItem subject;
 
     /**
      * Create a mail client run by user and attached to the given server.
@@ -75,10 +74,9 @@ public class MailClient
      * @param to The intended recipient.
      * @param message The text of the message to be sent.
      */
-    public void sendMailItem(String to, String a, String message)
+    public void sendMailItem(String to, String subject, String message)
     {
-        a = "" + subject;
-        MailItem item = new MailItem(user, to, a, message);
+        MailItem item = new MailItem(user, to, subject, message);
         server.post(item);
     }
 }
